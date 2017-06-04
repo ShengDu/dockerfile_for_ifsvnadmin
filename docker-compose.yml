@@ -1,0 +1,10 @@
+version: '2'
+services:
+    ifsvnadmin:
+        image: ifsvnadmin:latest
+        restart: always
+        hostname: ifsvnadmin
+        volumes:
+            - /data:/svndata
+        ports:
+            - "8080:80"
